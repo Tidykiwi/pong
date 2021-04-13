@@ -1,9 +1,18 @@
+import javax.swing.JFrame;
 
-public class Pong {
+public class Pong extends JFrame {
+	
+	public Pong( ) {
+		setTitle("myPong");
+		setSize(800, 600);
+		setResizable(false);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("This is a test");
+		
+		new Pong();
 
 	}
 
