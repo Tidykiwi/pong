@@ -4,14 +4,18 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 
 public class PongPanel extends JPanel implements ActionListener, KeyListener {
 
 	private final static Color BACKGROUND_COLOR = Color.BLACK;
+	private final static int TIMER_DELAY = 5;
 	
 	public PongPanel() {
 		setBackground(BACKGROUND_COLOR);
+		Timer timer = new Timer(TIMER_DELAY, this);
+			timer.start();
 	}
 	
 	@Override
