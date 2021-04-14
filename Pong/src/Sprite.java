@@ -29,7 +29,7 @@ public class Sprite {
 		this.initialXPosition = initialX;
 		this.initialYPosition = initialY;
 	}
-	public void resetToInitialPosiiton() {
+	public void resetToInitialPosition() {
 		setxPosition(initialXPosition);
 		setyPosition(initialYPosition);
 	}
@@ -45,7 +45,7 @@ public class Sprite {
 	public void setHeight(int height) {
 		this.height = height;
 	}
-	public void setColor(Color colour) {
+	public void setColour(Color colour) {
 		this.colour = colour;
 	}
 	
