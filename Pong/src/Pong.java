@@ -6,7 +6,7 @@ public class Pong extends JFrame {
 	private final static int WINDOW_WIDTH = 800;
 	private final static int WINDOW_HEIGHT = 600;
 	
-	public Pong( ) {
+	public Pong() {
 		setTitle(WINDOW_TITLE);
 		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 		setResizable(false);
