@@ -3,6 +3,7 @@ import java.awt.Color;
 public class Sprite {
 	
 	private int xPosition, yPosition;
+	private int initialXPosition, initialYPosition;
 	private int xVelocity, yVelocity;
 	private int width, height; 
 	private Color colour;
@@ -22,6 +23,14 @@ public class Sprite {
 	}
 	public void setyPosition(int yPosition) {
 		this.yPosition = yPosition;
+	}
+	public void setInitialPosition(int initialX, int initialY) {
+		this.initialXPosition = initialX;
+		this.initialYPosition = initialY;
+	}
+	public void resetToInitialPosiiton() {
+		setxPosition(initialXPosition);
+		setyPosition(initialYPosition);
 	}
 	public void setxVelocity(int xVelocity) {
 		this.xVelocity = xVelocity;
@@ -49,7 +58,7 @@ public class Sprite {
 		}	
 	}
 	
-	public void setYPosiiton(int newY, int panelHeight) {
+	public void setYPosition(int newY, int panelHeight) {
 		yPosition = newY;
 		
 		if(yPosition < 0) {
