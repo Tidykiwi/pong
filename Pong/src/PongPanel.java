@@ -27,8 +27,6 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		g.setColor(Color.WHITE);
-		g.fillRect(20,  20,  100,  100);
 	}
 	
 	@Override
@@ -53,6 +51,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	public void actionPerformed(ActionEvent event) {
 
 		update();
+		repaint();
 		
 	}
 
