@@ -16,7 +16,7 @@ public class Sprite {
 	public int getyVelocity() {return yVelocity;}
 	public int getWidth() {return width;}
 	public int getHeight() {return height;}
-	public Color getColor() {return colour;}
+	public Color getColour() {return colour;}
 	
 	// Setter methods
 	public void setxPosition(int xPosition) {
