@@ -18,6 +18,10 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 			timer.start();
 	}
 	
+	private void update() {
+		
+	}
+	
 	@Override
 	public void keyTyped(KeyEvent event) {
 		// TODO Auto-generated method stub
@@ -38,7 +42,8 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 
 	@Override
 	public void actionPerformed(ActionEvent event) {
-		// TODO Auto-generated method stub
+
+		update();
 		
 	}
 
